@@ -13,7 +13,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 load_dotenv()
 
 
-# Initializing our fastAPI app
+# Initializing our fastAPI apps
 app = FastAPI()
 
 # Initializing vector database and Langchain components
