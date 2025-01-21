@@ -1,0 +1,225 @@
+
+.parent
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 600px;
+    height: 600px;
+    top: 100px;
+    left: 50px;
+
+}
+
+.container h3
+{
+    margin-bottom: 2px;
+}
+
+
+/* Styling for social media buttons */
+
+#linkedinButton
+{
+    background-image: url("/src/images/linkedin.png");
+    margin-right: 15px;
+    width: 50px; /* Adjust based on your image size */
+    height: 50px;
+}
+
+#githubButton
+{
+    background-image: url("/src/images/github2.png");
+    width: 50px; /* Adjust based on your image size */
+    height: 50px;
+    margin-right: 15px;
+
+}
+
+#spotifyButton
+{
+    background-image: url("/src/images/spotify.png");
+    width: 50px;
+    height: 50px;
+}
+
+#linkedinButton, #githubButton, #spotifyButton {
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+/* Styling for selfie */
+
+.pictureArea
+{
+    position: relative;
+    display: flex;
+
+    top: 125px;
+    left: 350px;
+    height: 600px;
+    width: 600px;
+
+}
+
+.picture
+{
+    height: 600px;
+    width: 450px;
+    display: inline-block;
+    background-size: cover;
+    background-image: url("/src/images/output-onlinepngtools.png");
+
+}
+
+/* Controlling styling of icons */
+
+.iconArea
+{
+    display: inline-block;
+}
+
+.Icons
+{
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/*Icons to display tech exp*/
+
+#htmlIcon
+{
+    background-image: url("/src/images/html.png");
+
+}
+
+#cssIcon
+{
+    background-image: url("/src/images/css.png");
+}
+
+#javaIcon
+{
+    background-image: url("/src/images/java.png");
+}
+
+#javascriptIcon
+{
+    background-image: url("/src/images/javascript.png");
+}
+
+#pythonIcon
+{
+    background-image: url("/src/images/python.png");
+}
+
+#sqlIcon
+{
+    background-image: url("/src/images/sql.png");
+}
+
+#reactIcon
+{
+    background-image: url("/src/images/react.png");
+}
+
+#springIcon
+{
+    background-image: url("/src/images/spring.png");
+}
+
+#awsIcon
+{
+    background-image: url("/src/images/aws.png");
+}
+
+#postgresIcon
+{
+    background-image: url("/src/images/postgres.png");
+}
+
+/*#spinnakerIcon*/
+/*{*/
+/*    background-image: url("/src/images/spinnaker.png");*/
+/*}*/
+
+/*#opencvIcon*/
+/*{*/
+/*    background-image: url("/src/images/opencv.png");*/
+/*}*/
+
+
+.socialMediaArea
+{
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.resumeButton
+{
+    padding: 9px 25px;
+    background-color: #13af23;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+
+
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    color: white;
+
+    margin-top: 20px;
+
+
+
+
+}
+
+h1
+{
+    font-size: 68px;
+}
+
+h2
+{
+    font-size: 24px;
+    color: #13af23;
+}
+
+h3
+{
+     color: #13af23;
+}
+
+h4
+{
+    margin-bottom: 10px;
+
+}
+
+p
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
