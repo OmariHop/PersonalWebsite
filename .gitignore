@@ -1,0 +1,36 @@
+# Root-level .gitignore
+
+# Ignore node_modules for frontend
+my-app/node_modules/
+my-app/.env
+my-app/build/
+
+# Ignore Python artifacts for backend
+backend/.env
+backend/__pycache__/
+backend/venv/
+backend/db/
+
+# Ignore system files
+.DS_Store
+.env
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+my-app/node_modules
+my-app/.pnp
+my-app/.pnp.js
+
+
+
+# misc
+my-app/.DS_Store
+my-app/.env.local
+my-app/.env.development.local
+my-app/.env.test.local
+my.app/.env.production.local
+
+my-app/npm-debug.log*
+my-app/yarn-debug.log*
+my-app/yarn-error.log*
