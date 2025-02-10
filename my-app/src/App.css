@@ -5,39 +5,70 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-
-    font-family: 'Poppins', serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
+    overflow: auto; /* Allow scrolling */
 }
 
-html
-{
-    overflow: hidden;
-}
-
-body
-{
-    overflow: auto;
-}
-
-
-/* Main app body */
 .app-body {
-
+    display: flex;
+    flex-direction: column;
     background-color: #24252A;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-
-    border-bottom: 35px solid #13af23;
-
-
+    min-height: 100vh; /* Ensures proper height on mobile */
+    min-width: 100vw;
+    border-bottom: 20px solid #17e81a;
+    overflow-x: scroll;
 }
 
-.h1
-{
+.header-title {
     color: #17e81a;
     background-color: #24252A;
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* Tablets & Small Screens (768px and below) */
+@media (max-width: 768px) {
+    .app-body {
+        padding: 10px;
+        background-position: top;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile Devices (576px and below) */
+@media (max-width: 576px) {
+    .app-body {
+        padding: 5px;
+    }
+
+    .header-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+/* Large Screens (1024px and above) */
+@media (min-width: 1024px) {
+    .app-body {
+        padding: 20px;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+}
+
+/* Extra Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+    .app-body {
+        max-width: 1200px;
+        margin: 0 auto; /* Centers content */
+    }
 }

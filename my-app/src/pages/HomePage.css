@@ -1,11 +1,23 @@
 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 .parent
 {
     position: relative;
     display: flex;
     flex-direction: row;
-
-
+    animation: fadeInUp 1.2s ease-out;
 }
 
 .container
@@ -20,7 +32,19 @@
     top: 100px;
     left: 50px;
 
+    animation-delay: 0.2s;
+
 }
+
+
+.container,
+.pictureArea {
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+
 
 .container h3
 {
@@ -73,6 +97,8 @@
     left: 350px;
     height: 600px;
     width: 600px;
+
+    animation-delay: 0.5s;
 
 }
 
@@ -177,11 +203,12 @@
 .resumeButton
 {
     padding: 9px 25px;
-    background-color: #13af23;
+    background-color: #17e81a;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
+    border-radius: 50px;
 
 
     font-family: 'Poppins', serif;
@@ -189,10 +216,11 @@
     color: white;
 
     margin-top: 20px;
+}
 
-
-
-
+.resumeButton:hover
+{
+    background-color: #13af23;
 }
 
 h1
@@ -203,12 +231,12 @@ h1
 h2
 {
     font-size: 24px;
-    color: #13af23;
+    color: #17e81a;
 }
 
 h3
 {
-     color: #13af23;
+     color: #17e81a;
 }
 
 h4

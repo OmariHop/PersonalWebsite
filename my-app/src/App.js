@@ -19,11 +19,7 @@ return(
 
     <div className="app-body">
     <Router>
-
-        {/*Navbar placement*/}
             <NavBar/>
-
-
         <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/experience" element={<Experience/>}/>
@@ -33,7 +29,12 @@ return(
             <Route path="/contact" element={<ContactMe/>}/>
         </Routes>
     </Router>
+
+
     </div>
+
+
+
 )
 }
 

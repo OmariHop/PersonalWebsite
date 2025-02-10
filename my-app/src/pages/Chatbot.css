@@ -1,0 +1,119 @@
+.chat-intro
+{
+    width: 50%;
+}
+
+
+.chatbot-container
+{
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.chat-display
+{
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd
+}
+
+.chat-message
+{
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.chat-message.user
+{
+    background-color: #24252A;
+    align-self: flex-end;
+}
+
+.chat-message.assistant
+{
+    background-color: #17e81a;
+    align-self: flex-start;
+}
+
+.chat-input
+{
+    display: flex;
+    padding: 10px;
+    gap:10px
+}
+
+.chat-input input
+{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 15px;
+
+}
+
+.chat-input button
+{
+    padding: 10px 20px;
+    background-color: #17e81a;
+    color: white;
+    border-radius: 50px;
+    border-width: 1px;
+    cursor: pointer;
+
+
+    transition: all 0.3s ease 0s;
+    border-color: #17e81a;
+}
+
+.chat-input button:hover
+{
+    background-color: #13af23
+}
+
+.chat-input button:disabled
+{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.page-container
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    top: 20px;
+}
+
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #17e81a; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .02em; /* Adjust as needed */
+    animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #17e81a; }
+}

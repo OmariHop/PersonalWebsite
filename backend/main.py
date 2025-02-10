@@ -1,12 +1,11 @@
 # Main method that sets up fastAPI
-from langchain.chains import ConversationalRetrievalChain
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-
-from dotenv import load_dotenv
 from langchain_community.vectorstores import Chroma
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from dotenv import load_dotenv
 
 
 # Load env variables
@@ -15,6 +14,16 @@ load_dotenv()
 
 # Initializing our fastAPI apps
 app = FastAPI()
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Adjust this to your domain, e.g., ["http://localhost:3000"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Initializing vector database and Langchain components
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")

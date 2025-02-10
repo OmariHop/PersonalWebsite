@@ -6,21 +6,46 @@
     flex-direction: row;
     gap: 120px;
 
+    opacity: 0;
+    transform: translateY(30px);
+    animation: revealContent 1.5s ease-out forwards;
+
 
 }
 
-.pictureContainer
-{
+@keyframes revealContent {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pictureContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     position: relative;
-
     top: 200px;
     left: 250px;
     width: 500px;
     height: 500px;
+
+    /* Add animation */
+    animation: float 3s ease-in-out infinite; /* Float animation */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the same position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up slightly */
+    }
 }
 
 .pictureContainer img
@@ -41,9 +66,9 @@
     flex-direction: column;
     align-items: flex-start;
 
-    width: 700px;
+    width: 750px;
     height: 700px;
-    top: 30px;
+    top: 15px;
     left: 50px;
 
 }
@@ -64,7 +89,7 @@
 
 .workArea:nth-child(-n+3)
 {
-    border-bottom: 1px solid #13af23;
+    border-bottom: 1px solid #17e81a;
 
 }
 
@@ -78,7 +103,7 @@
 .workArea h3
 {
     margin-bottom: 5px;
-    color: #13af23;
+    color: #17e81a;
 }
 
 

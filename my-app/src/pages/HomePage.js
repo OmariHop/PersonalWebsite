@@ -56,7 +56,7 @@ const HomePage = () => {
 
 
             <div className="pictureArea">
-                <img className="picture" src="/src/images/output-onlinepngtools.png"></img>
+                <img className="picture" src="/images/output-onlinepngtools.png"></img>
             </div>
         </div>
     )

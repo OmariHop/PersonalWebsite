@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Projects.css";
-
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
+
+
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setAnimate(true);
+        }, 300);
+    }, []);
+
+
 
     const projects =
         [   {
@@ -45,7 +55,13 @@ const Projects = () => {
 
     return(
         <div className="portfolio">
-            <h1>My Projects</h1>
+            <div className="introMessage">
+                <h1>My Projects</h1>
+                <p>Here, you’ll find a showcase of the projects I’ve worked on beyond the classroom—spanning personal ventures, undergraduate research labs, and hackathons. Each project represents a step in my journey to explore and solve real-world problems through technology.
+
+                    From responsive React websites that deliver seamless user experiences to cutting-edge computer vision projects utilizing object detection, my work reflects a passion for innovation and learning. You’ll also see projects that demonstrate my skills in collaborative environments, leveraging modern tools and frameworks to bring ideas to life.</p>
+            </div>
+
             <div className="projectGallery">
                 {projects.map((project, index) => (
                     <ProjectCard
@@ -54,6 +70,8 @@ const Projects = () => {
                         description={project.description}
                         link={project.link}
                         image={project.image}
+                        className={animate ? "project-card reveal" : "project-card"}
+                        style={{ transitionDelay: `${index * 0.2}s` }} // Stagger animation for each card
                     />
                 ))
                 }

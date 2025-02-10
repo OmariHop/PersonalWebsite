@@ -1,0 +1,66 @@
+
+/* 1. Remove default margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Includes padding and borders in the element's total width/height */
+}
+
+/* 2. Set consistent line height and font size for the HTML and body */
+html, body {
+    height: 100%; /* Ensures full height for the body */
+    font-size: 100%; /* Resets font-size to browser default */
+    line-height: 1.6; /* Sets consistent line spacing */
+}
+
+/* 3. Remove bullets and padding from lists */
+ul, ol {
+    list-style: none;
+}
+
+/* 4. Reset links */
+a {
+    text-decoration: none;
+    color: inherit; /* Use parent element's color */
+}
+
+/* 5. Reset images, videos, and other media */
+img, video {
+    max-width: 100%; /* Ensures media fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent inline spacing below images */
+}
+
+/* 6. Reset buttons */
+button {
+    border-color: #17e81a;
+    cursor: pointer; /* Ensure a pointer cursor is applied */
+}
+
+/* 7. Reset input and textarea styles */
+input, textarea {
+    all: unset; /* Remove browser styles */
+}
+
+/* 8. Set a baseline for tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%; /* Ensure tables fill their containers */
+}
+
+/* 9. General reset for forms */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    display: none; /* Hide legend by default */
+}
+
+/* 10. Add a base font-family */
+body {
+    background-color: #24252A;
+}

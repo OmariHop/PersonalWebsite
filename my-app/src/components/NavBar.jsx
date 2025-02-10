@@ -15,7 +15,7 @@ import {Link} from "react-router-dom";
                  <li><Link to ="/projects">Projects</Link></li>
                  <li><Link to ="/chatbot">Chatbot</Link></li>
                 </ul>
-                 <button><Link to ="contact">Contact</Link></button>
+                 <button className="navButton"><Link to ="contact">Contact Me</Link></button>
          </header>
 
      )
